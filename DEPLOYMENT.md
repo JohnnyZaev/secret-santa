@@ -388,10 +388,3 @@ systemctl restart sshd
 
 ---
 
-## Полезные ссылки
-
-- [PM2 документация](https://pm2.keymetrics.io/)
-- [Nginx документация](https://nginx.org/ru/docs/)
-- [Let's Encrypt](https://letsencrypt.org/)
-- [GitHub Pages документация](https://docs.github.com/en/pages)
-
