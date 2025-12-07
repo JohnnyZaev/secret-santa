@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { Database } from './types';
+import { Database, User, Room, Wishlist } from './types';
 
 const DATA_FILE = path.join(__dirname, '../data.json');
 

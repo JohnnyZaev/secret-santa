@@ -1,3 +1,5 @@
+import { Request } from 'express';
+
 export interface User {
   id: string;
   username: string;
@@ -25,7 +27,7 @@ export interface Database {
   wishlists: Wishlist[];
 }
 
-export interface AuthRequest extends Express.Request {
+export interface AuthRequest extends Request {
   userId?: string;
 }
 
