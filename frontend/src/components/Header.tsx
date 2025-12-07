@@ -7,9 +7,11 @@ const Header: React.FC = () => {
   return (
     <div className="header">
       <div className="header-content">
-        <h1>🎅 Тайный Санта</h1>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <span>Привет, <strong>{user?.username}</strong>!</span>
+        <h1>🎄 Тайный Санта 💪 🎅</h1>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', color: '#fff', fontWeight: 600 }}>
+          <span style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
+            ❄️ Привет, <strong style={{ color: '#ffd700' }}>{user?.username}</strong>! ❄️
+          </span>
           <button onClick={logout} className="btn btn-small">
             Выйти
           </button>

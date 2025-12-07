@@ -47,9 +47,35 @@ const ChristmasDecor: React.FC = () => {
 
       {/* Новогодние украшения по углам */}
       <div className="christmas-decoration top-left">🎄</div>
-      <div className="christmas-decoration top-right">🎅</div>
+      <div className="christmas-decoration top-right">
+        🎅
+        <span style={{ fontSize: '20px', marginLeft: '5px' }}>💪</span>
+      </div>
       <div className="christmas-decoration bottom-left">🎁</div>
       <div className="christmas-decoration bottom-right">⛄</div>
+      
+      {/* Дополнительный новогодний декор */}
+      <div style={{
+        position: 'fixed',
+        top: '50%',
+        left: '20px',
+        fontSize: '35px',
+        animation: 'float 4s ease-in-out infinite',
+        animationDelay: '0.5s',
+        zIndex: 5,
+        pointerEvents: 'none'
+      }}>🔔</div>
+      
+      <div style={{
+        position: 'fixed',
+        top: '50%',
+        right: '20px',
+        fontSize: '35px',
+        animation: 'float 4s ease-in-out infinite',
+        animationDelay: '1.5s',
+        zIndex: 5,
+        pointerEvents: 'none'
+      }}>✨</div>
     </>
   );
 };
