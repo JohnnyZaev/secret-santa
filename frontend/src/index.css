@@ -63,16 +63,32 @@ body::before {
 }
 
 body::after {
-  content: '🎅';
+  content: '';
   position: fixed;
-  font-size: 250px;
-  opacity: 0.03;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-15deg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/image_2025-12-07_18-13-05.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;
   pointer-events: none;
   z-index: 0;
-  animation: float 6s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
+  filter: brightness(1.2) contrast(0.8);
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) scale(1); 
+    opacity: 0.08;
+  }
+  50% { 
+    transform: translateY(-15px) scale(1.02); 
+    opacity: 0.12;
+  }
 }
 
 /* Новогодний декор */
@@ -244,6 +260,11 @@ body::after {
   font-size: 30px;
   opacity: 0.1;
   animation: rotate 20s linear infinite;
+}
+
+.card::before {
+  animation: borderGlow 3s linear infinite;
+  z-index: -1;
 }
 
 @keyframes rotate {
