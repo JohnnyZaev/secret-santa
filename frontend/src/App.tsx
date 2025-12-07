@@ -5,6 +5,7 @@ import Auth from './components/Auth';
 import Header from './components/Header';
 import RoomList from './components/RoomList';
 import RoomDetail from './components/RoomDetail';
+import ChristmasDecor from './components/ChristmasDecor';
 
 const PrivateRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user, loading } = useAuth();
@@ -57,10 +58,12 @@ const AppRoutes: React.FC = () => {
 const App: React.FC = () => {
   return (
     <AuthProvider>
+      <ChristmasDecor />
       <AppRoutes />
     </AuthProvider>
   );
 };
 
 export default App;
+
 

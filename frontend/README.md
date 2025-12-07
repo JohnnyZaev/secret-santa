@@ -42,3 +42,4 @@ VITE_API_URL=http://localhost:3001/api
 1. Pages включены и настроены на GitHub Actions
 2. Добавлен секрет `VITE_API_URL` с URL вашего backend API
 
+

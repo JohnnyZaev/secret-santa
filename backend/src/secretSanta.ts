@@ -35,3 +35,4 @@ export function assignSecretSantas(participants: string[]): { [userId: string]: 
   return assignments;
 }
 
+
